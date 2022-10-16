@@ -1,0 +1,30 @@
+.nav--container{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.nav--logo {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.nav--image {
+    width: 35px;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav--logo--text {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.nav--project-name {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-right: 50px;
+}
