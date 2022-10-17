@@ -4,7 +4,7 @@ import Logo from './assets/trollface.png'
 
 export default function Navbar(){
     return (
-        <nav className='nav--container'>
+        <nav className='nav--container linear'>
             <div className='nav--logo'>
                 <img src={Logo} className='nav--image' alt='Logo' />
                 <h1 className='nav--logo--text'>Meme Generator</h1>
