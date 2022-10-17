@@ -2,7 +2,9 @@
     display: grid;
     grid-template-areas: 
     "first second"
-    "button button";
+    "button button"
+    "img img"
+    "img img";
     gap: 1rem;
     padding: 2rem;
 }
@@ -32,4 +34,11 @@
     color: white;
     padding: 0.7rem;
 
+}
+
+.form--image {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+    max-height: 600px;
 }

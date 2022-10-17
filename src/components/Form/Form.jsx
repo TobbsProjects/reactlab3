@@ -3,12 +3,11 @@ import './Form.css'
 import memeData from '../../memesData'
 
 export default function Form() {
-    let selectedImage
+    const [memeImg, setMeme] = React.useState(memeData.data.memes[Math.floor(Math.random() * memeData.data.memes.length)].url)
+    
     function memeGen(){
-        selectedImage = memeData.data.memes[Math.floor(Math.random() * memeData.data.memes.length)].url
+        setMeme(memeData.data.memes[Math.floor(Math.random() * memeData.data.memes.length)].url)
     }
-
-    memeGen()
 
     return (
         <div className='form--container'>
@@ -20,7 +19,7 @@ export default function Form() {
             >
                 Get a new meme image
             </button>
-            <img src={selectedImage} alt='meme' />
+            <img src={memeImg} alt='meme' className='form--image'/>
             
         </div>
     )
